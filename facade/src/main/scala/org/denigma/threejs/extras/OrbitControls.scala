@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.JSName
 
 
 @JSName("THREE.OrbitControls")
+@js.native
 class OrbitControls( camera:Camera, element:HTMLElement) extends js.Object
 {
 
