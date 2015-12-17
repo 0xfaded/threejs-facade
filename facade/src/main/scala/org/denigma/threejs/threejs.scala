@@ -2128,7 +2128,8 @@ class LOD extends Object3D {
 @JSName("THREE.Mesh")
 @js.native
 class Mesh  extends Object3D {
-  def this(geometry: Geometry = js.native, material: Material = js.native) = this()
+  def this(geometry: Geometry, material: Material) = this()
+  def this(geometry: Geometry, material: Material, skipInitialization: Boolean) = this()
   var geometry: Geometry = js.native
   var material: Material = js.native
   def updateMorphTargets(): Unit = js.native
